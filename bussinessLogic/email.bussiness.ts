@@ -35,12 +35,14 @@ export class EmailService {
           ]
       }
   
-      const sendEmai = await transporter.sendMail(mailOptions);
-  
-      if (sendEmai.error)
+      const sendEmai = await transporter.sendMail(mailOptions,(error,res)=>{
+        if (error)
         console.log(sendEmai.error, 'error while sending email');
   
        return sendEmai
+      });
+  
+      
   
       //return true;
     } catch (err) {

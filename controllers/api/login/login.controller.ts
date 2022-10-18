@@ -69,12 +69,13 @@ class loginController {
             })
             const emailLogin = new EmailService()
             const email = user.email
-            const content = `<div>
-            <h1>Rateusonline</h1>
-             <p>clink the link to generate new  Password
-             <a href="http://localhost:3020/generatepassword/${user.varifycode}" title="change password" >Click here</a>
-             </p>
-            
+            const content = `<div>Dear ${user.fullName}, 
+<p>We are delighted to have you on board with us. We are glad to see that you’ve registered on our website with your business information and entrusted us with this service to reach as many potential customers as possible all over UK.</p>
+<p>Request you to kindly verify your listing and confirm that it has all the information you wish to share. Once you confirm the details, we will upload the same for all your customers to see. The verification process will help us ensure that we only share information and details approved by you and which will help your business thrive.</p>
+<p>To verify Click on - <a href="http://localhost:3020/generatepassword/${user.varifycode}" title="change password" >Click here</a> </p>
+<p>Please feel free to contact us for any further query/feedback. Have a great day 😊 </p> 
+Regards,<br>
+RateUsOnline Team  
             </div>
             `
             const Subject = "RateUsOnline: Forgot Password"    
