@@ -11,3 +11,5 @@ const LoginValidator =  [
     .isString().withMessage("Password must be a string...")
 ]
 export default LoginValidator;
+
+

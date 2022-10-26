@@ -29,7 +29,7 @@ class signUpController {
                 const resp = await SignUpLogic.handleSingup(req.body)
                 console.log("user Create Response",resp);
                 let emailTo =  req.body.email;
-                let subject = "Welcome In Rateusonline";
+                let subject = "Welcome to RateUsOnline";
                 let content = `<div>Dear ${req.body.fullName}, 
                 <p>We are delighted to have you on board with us. We are glad to see that you’ve registered on our website with your business information and entrusted us with this service to reach as many potential customers as possible all over UK.</p>
                 <p>Request you to kindly verify your listing and confirm that it has all the information you wish to share. Once you confirm the details, we will upload the same for all your customers to see. The verification process will help us ensure that we only share information and details approved by you and which will help your business thrive.</p>
